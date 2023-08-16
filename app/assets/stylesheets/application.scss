@@ -1,0 +1,23 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+html, body {
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.bg {
+  background-image: image-url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  opacity: 0.98;
+}
+
+
