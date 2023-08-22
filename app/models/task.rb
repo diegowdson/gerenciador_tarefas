@@ -35,13 +35,8 @@ class Task < ApplicationRecord
   private
 
   def status
-    if done?
-      'done'
-    elsif due_date.past?
-      'expired'
-    else
-      'pending'
-    end
-  end  
-end
+    return 'done' if done?
 
+    due_date.past? ? 'expired' : 'pending'
+  end
+end
